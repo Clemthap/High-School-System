@@ -6,15 +6,15 @@ Background color: #F8FAFC
 Text color: #111827 or #ffe4c4
 */
 
-
 body {
+    position: relative;
     margin: 0;
     padding: 0;
     background-image: url(/Assets/Images/julio-lopez-lZ5Ndg9IKGs-unsplash.jpg);
     box-sizing: border-box;
     background-size: contain;
     background-repeat: no-repeat;
-    z-index: 1000;
+    /* z-index: 1000; */
     /*  */
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: #ffe4c4;
@@ -34,18 +34,21 @@ ul {
 /* header sections */
 .header {
     position: relative;
-    top: 0px;
+    top: 0;
+    /* margin: -7em 0em 0em 0em; */
     background:linear-gradient(to right, rgba(20, 35, 110, 0.879), transparent);
     height: 80vh;
     width: 100%;
-    padding-top: 3em;
+    padding-top: 2em;
+    
 }
 
 .navigation {
-    position: fixed;
+    position: sticky;
+    top: 1.5em;
     display: flex;
     box-sizing: border-box;
-    margin:0px 5px 0px 5px;
+    margin: 0px 5px 0px 5px;
     padding: 0em 0.2em;
     background:  transparent;
     z-index: 1000;
@@ -55,12 +58,11 @@ ul {
     transition: box-shadow 0.4s ease, padding 0.4s ease;
 }
 
-.header:scrolled .navigation {
+/* .header:scrolled .navigation {
     background: #fff;
     box-shadow: 0px 8px 25px #0000001f;
     padding: 3em 0;
-}
-
+} */
 
 #logoSpace, #nav-lists, #logslist {
     flex: 1 30%;
@@ -154,7 +156,7 @@ ul {
 }
 
 .headerContent {
-    position: sticky;
+    position: relative;
     display: flex;
     margin:  2em;
     justify-content: center;
@@ -167,10 +169,10 @@ ul {
     text-align: center;
     align-items: center;
     border: none #ffe4c4;
-    margin-top: 15em;
+    margin-top: 10em;
     padding: 15px 10px;
     text-align: justify;
-    bottom: 20px;
+    /* bottom: 20px; */
 }
 .HeroBtn {
     display: flex;
@@ -197,11 +199,13 @@ ul {
 .HeroBtn button:nth-child(2) {
     background-color: #13259a;
     color: #ffe4c4;
-    box-shadow: 0px 0px 20px #ffe4c4;
+    /* outline-color:invert; */
+    
 }
-.HeroBtn button:nth-child(2):hover{
+.HeroBtn button:nth-child(2):is(:hover, :focus){
     transform: scale(1.05);
     transition: transform 2s;
+    /* box-shadow: 0px 0px 20px 20px #ffe4c4; */
 }
 
 .containerTwo {
