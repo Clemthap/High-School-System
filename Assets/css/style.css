@@ -1,0 +1,245 @@
+/* 
+Primary color: #1E3A8A
+Secondary color: #3B82F6
+Accent color: #FBBF24
+Background color: #F8FAFC
+Text color: #111827 or #ffe4c4
+*/
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(/Assets/Images/julio-lopez-lZ5Ndg9IKGs-unsplash.jpg);
+    box-sizing: border-box;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 1000;
+    /*  */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #ffe4c4;
+    /* color: #111827; */
+}
+a {
+    color: currentColor;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+
+
+/* header sections */
+.header {
+    position: relative;
+    top: 0px;
+    background:linear-gradient(to right, rgba(20, 35, 110, 0.879), transparent);
+    height: 80vh;
+    width: 100%;
+    padding-top: 3em;
+}
+
+.navigation {
+    position: fixed;
+    display: flex;
+    box-sizing: border-box;
+    margin:0px 5px 0px 5px;
+    padding: 0em 0.2em;
+    background:  transparent;
+    z-index: 1000;
+    box-shadow: 0px 0px 24px #fff;
+    border-radius: 20px;
+    background-color: #13259a81;
+    transition: box-shadow 0.4s ease, padding 0.4s ease;
+}
+
+.header:scrolled .navigation {
+    background: #fff;
+    box-shadow: 0px 8px 25px #0000001f;
+    padding: 3em 0;
+}
+
+
+#logoSpace, #nav-lists, #logslist {
+    flex: 1 30%;
+} 
+#logoSpace {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 10px 2em;
+    /* border: solid; */
+}
+#nav-lists {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    /* animation: fixiateBar 300ms forwards;
+
+    timeline-trigger: --trigger view() entry 100%;
+
+    timeline-trigger: --trigger play-forwards; */
+}
+.navLink {
+    transition: transform 2.5s;
+    border-radius: 5px;
+    padding: 1em 2em;
+    margin: 0em 0.2em;
+    text-wrap-mode: nowrap;
+    transition: 2s;
+}
+
+.navLink:hover  {
+    padding: 1em 2.5em;
+    transform: scale(1.15);
+    color: #ffe4c4;
+    transition: padding 2s transform 3s color 2s;
+    background-color: #13259a;
+    box-shadow: 0px 0px 30px #ffe4c4;
+}
+
+@keyframes fixiateBar {
+    to {
+        position: fixed;
+        top: 0.5em;
+        left: 20%;
+        text-align: center;
+        background-color: #13259aa0;
+        padding: 10px 20px;
+        width: 50%;
+        gap: 2em;
+        font-size: 32px;
+        border-radius: 5px;
+    }
+}
+
+#logslist {
+    display: flex;
+    /* gap: 20px; */
+    justify-content: center;
+    align-items: center;
+}
+
+#logslist li {
+    margin-right: 1.2em;
+    border-radius: 5px;
+    padding: 0.5em 1em;
+    background-color: #13259a;
+    box-shadow: 0px 0px 8px #13259a;
+    transition: 1.5s;
+    text-wrap-mode: nowrap;
+}
+#logslist li:hover {
+    padding: 1em 2em 1em 1em;
+    text-align: center;
+    transition: padding 2s;
+}
+
+#searchBtn {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    margin: 0em 1em;
+}
+
+#searchBtn input {
+    border: none;
+    width: 100;
+    height: 35px;
+    font-size: 16px;
+    background-color: #13259a3d;
+    color: #ffffff;
+}
+
+.headerContent {
+    position: sticky;
+    display: flex;
+    margin:  2em;
+    justify-content: center;
+    align-items: center;
+    box-sizing:content-box;
+}
+
+.containerOne {
+    flex: 1;
+    text-align: center;
+    align-items: center;
+    border: none #ffe4c4;
+    margin-top: 15em;
+    padding: 15px 10px;
+    text-align: justify;
+    bottom: 20px;
+}
+.HeroBtn {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.HeroBtn button {
+    margin-top: 20px;
+    border-radius: 5px;
+    border: none;
+    text-align: center;
+    font-size: large;
+    padding: 1em 2em;
+    background-color: #ffe4c4;
+    box-shadow: 0px 0px 20px #ffe4c4;
+    transition: 2s;
+}
+.HeroBtn button:nth-child(1):hover {
+    padding: 1em 2em 1em 4em;
+    transition: 3s padding;
+}
+
+.HeroBtn button:nth-child(2) {
+    background-color: #13259a;
+    color: #ffe4c4;
+    box-shadow: 0px 0px 20px #ffe4c4;
+}
+.HeroBtn button:nth-child(2):hover{
+    transform: scale(1.05);
+    transition: transform 2s;
+}
+
+.containerTwo {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+/* Main Section */
+.mainSection {
+    background-color: bisque;
+    color: #13259a;
+    height: 1000px;
+}
+
+.statistics {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.statslist {
+    display: flex;
+    gap: 25px;
+    text-align: center;
+}
+.statslist li {
+    /* border: solid #13259a; */
+    padding: 1em 2em;
+    background-color: #ffe4c4;
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px #13259a;
+    transition: 2s;
+}
+
+.statslist li:hover {
+    transform: scale(1.15);
+    color: #ffe4c4;
+    transition: transform 3s color 2s;
+    background-color: #13259a;
+    box-shadow: 0px 0px 30px #ffe4c4;
+}
