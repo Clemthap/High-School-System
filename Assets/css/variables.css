@@ -1,0 +1,109 @@
+
+
+/* Main Section */
+
+
+.mainSection {
+    /* background-color: bisque; */
+    background-image: url(/Assets/Images/swipe--6-VfxCDuoY-unsplash.jpg);
+    box-sizing: border-box;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* color: #13259a; */
+    /* height: 500px; */
+    padding: 2em;
+    color: currentColor;
+    color: #13259a;
+}
+
+.statistics {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.statslist {
+    display: flex;
+    gap: 25px;
+    text-align: center;
+}
+.statslist li {
+    padding: 1em 2em;
+     background: #ffffff65;
+    color: #080c75;
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px #13259a;
+    transition: 2s;
+}
+
+.statslist li:hover {
+    transform: scale(1.15);
+    color: #ffe4c4;
+    transition: transform 3s color 2s;
+    background-color: #13259a;
+    box-shadow: 0px 0px 30px #ffe4c4;
+}
+
+/*  */
+#resources {
+    display: flex;
+    margin-top: 1.5em;
+    justify-content: center;
+}
+#resourceTitle {
+    display: block;
+    text-align: center;
+}
+
+.claslist {
+    flex: 1;
+    text-align: center;
+    /* border: 0.2em solid  #16168ab3; */
+    padding: 0em 1em;
+    margin: 1em;
+    /* height: 250px; */
+    box-sizing: content-box;
+    background: #ffffff65;
+    color: #13259a;
+    box-sizing: content-box;
+}
+
+.claslist h2 {
+    padding: 1em 0.5em;
+    letter-spacing: 0.2em;
+    font-family: monospace;
+}
+
+.claslist li {
+    padding: 1em;
+    margin: 1em 0em;
+    background-color: transparent;
+}
+
+.claslist li:hover {
+    box-shadow: 0em 0.5em 0.5em #080c75;
+}
+
+/* Community */
+
+#community {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    height: 100vh;
+    background: #ffe4c448;
+    box-shadow: 0em 0em 2em #ffe4c4;
+    gap: 1%;
+}
+.sideBar {
+    margin: 0.2em;
+    /* border: 0.5em solid #080c75; */
+    padding: 1em;
+}
+.sideBar:nth-child(1){
+    flex: 1 60%;
+    background-color: #080c7545;
+}
+.sideBar:nth-child(2){
+    flex: 1 40%;
+    background-color: #3e41939c;
+}
