@@ -106,6 +106,10 @@
 }
 
 /* Log in page */
+
+form fieldset  {
+    border: none;
+}
  #formStudent {
     display:block;
     justify-self: center;
@@ -177,13 +181,14 @@
     background-color: #080c75;
     border-radius: 0.5em;
 }
+    */
 
 .inputs {
     display:flex;
     justify-content: center;
-    flex-direction: column;
-    
+    flex-direction: column;  
 }
+
 .inputs input {
     padding: 1em 0.2em;
     margin: 0.5em 0em;
@@ -201,4 +206,10 @@
     color: #ffe4c4;
     padding: 1em 0.5em;
     text-align: center;
-} */
+}
+
+.terms {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

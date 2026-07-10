@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/Assets/css/style.css">
     <link rel="stylesheet" href="/Assets/css/variables.css">
-    <title>Dashboard</title>
+    <title>Dashboard | Student</title>
 </head>
 <body>
     <div class="header" id="header">
@@ -44,25 +44,19 @@
         </div>
 
         <form action="" id="formStudent">
-    
-                <ul class="user">
-                    <a href="#top">
-                        <li>Student</li>
-                    </a>
-                    <a href="teacher.html">
-                        <li>Teacher</li>
-                    </a>
-                </ul>
-            <div class="inputs">
-                <input type="text" placeholder="username" required>
+            <fieldset>
+                <div class="inputs">
+                    <input type="text" placeholder="username" required>
 
-                <input type="password" placeholder="password" required>
+                    <input type="password" placeholder="password" required>
                 
-                <input type="submit">
-            </div>
-            <div>
-                <input type="checkbox" name="terms" id="terms" required><label for="terms" >Teams and conditions are applied</label>
-            </div>
+                    <input type="submit">
+                </div>
+                <div class="terms">
+                    <input type="checkbox" name="terms" id="terms" required>
+                    <label for="terms" >Teams and conditions are applied</label>
+                </div>
+            </fieldset>
         </form>
     </div>
 </body>
