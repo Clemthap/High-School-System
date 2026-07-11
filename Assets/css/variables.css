@@ -110,22 +110,46 @@
 form fieldset  {
     border: none;
 }
- #formStudent {
-    display:block;
-    justify-self: center;
+ #formStudent, #formTeacher {
+    display: block;
     justify-content: center;
-    align-items: center;
-    margin-top: 5em;
-    /* border: solid #080c75; */
-    /* width: fit-content; */
-    /* height: fit-content; */
-    padding:10px 20px;
-    color: #ffe4c4;
-    background-color: #080c75;
-    box-sizing: content-box;
-    box-shadow: 0em 0em 2em #ffe4c4;
-    border-radius: 15px;
+    justify-self: center;
+    margin: 5em 2em 2em 2em;
+    padding: 2.5em;
+    border: 0.2em solid #ffe4c4;
+    border-radius: 2em;
+    width: fit-content;
+    background: #080c7554;
+    transition: 1s;
+/* 
+    background:url(/Assets/Images/Writing.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    background-size: cover; */
 }
+#formStudent:hover, #formTeacher:hover {
+    /* background:url(/Assets/Images/Writing.jpg); */
+    background-position: center;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    background-size: cover;
+    box-shadow: 0em 0em 2em 1em #080c75;
+    transition: 1s;
+}
+
+.labels {
+    text-align: center;
+}
+
+.labels label {
+    padding: 0.5em 1em;
+    margin: 0.2em 0.5em;
+    border: 0.1em solid #ffe4c4;
+    border-radius: 0.5em ;
+    cursor:pointer; 
+}
+
 .user {
     display: flex;
     justify-content: center;
@@ -140,48 +164,7 @@ form fieldset  {
 }
 .user a:nth-child(n){
     border: solid;
-
 }
-
-/*
-#formTeacher {
-    display:block;
-    justify-self: center;
-    justify-content: center;
-    align-items: center;
-    margin-top: 5em;
-    /* border: solid #080c75; */
-    /* width: fit-content; */
-    /* height: fit-content; 
-    padding:10px 20px;
-    background-color: #ffe4c4;
-    color: #080c75;
-    box-shadow: 0em 0em 2em #ffe4c4;
-    box-sizing: content-box;
-    border-radius: 15px;
-}
-
-#formTeacher li:nth-child(2){
-     color: #ffe4c4;
-    background-color: #080c75;
-    transition: 2s all;
-}
-
-
-.user {
-    background-color: #000;
-    display: flex;
-    flex-direction: row;
-    color: #fff;
-}
-.user li {
-    width: 100%;
-    padding: 0.9em 1em;
-    margin: 2em 1em;
-    background-color: #080c75;
-    border-radius: 0.5em;
-}
-    */
 
 .inputs {
     display:flex;
@@ -193,23 +176,26 @@ form fieldset  {
     padding: 1em 0.2em;
     margin: 0.5em 0em;
     background-color: transparent;
-    border: none;
     border-radius: 5px;
-    border: 0.2em solid #13259a;
+    border: none;
+    color: #fff;
+    border-bottom: 0.2em double #080c75;
 }
-.inputs input:hover {
-    border: 0.2em solid #080c75;
-}
+
+
 
 .inputs input:nth-last-child(1) {
     background-color: #080c75;
     color: #ffe4c4;
     padding: 1em 0.5em;
-    text-align: center;
 }
 
 .terms {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 2em 0em 0em 0em ;
 }
+
+
+/* Community */
